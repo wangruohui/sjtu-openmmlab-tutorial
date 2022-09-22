@@ -131,3 +131,4 @@ dmypy.json
 # This project
 data/
 *.pth
+work_dir*/
