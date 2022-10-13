@@ -2,17 +2,25 @@
 
 ## Notes on SJTU Cluster
 
-**Activate Conda Environment in terminal**
+1. To activate conda environment in **terminal**
 
-```sh
-module load anaconda3/2019.07
-source activate openmmlab
-```
+    ```sh
+    module load anaconda3/2019.07
+    source activate openmmlab
+    ```
 
-**Select openmmlab kernel in jupyter notebook**
+2. Remember to select **openmmlab** kernel in jupyter notebook
+
+3. Remember to check PATH in terminal
+
+    PATH should include `/cluster/apps/anaconda3/2019.07/envs/openmmlab/bin` at the first entry.
+    Otherwise `mim` will not work correctly.
 
 ## Set up Environment Locally
 
+**Check PATH**
+
+Should include
 **Step 0**. Set up Python and install PyTorch correctly, using either pip or conda
 
 **Step 1**. Install [MIM](https://github.com/open-mmlab/mim)
@@ -26,7 +34,7 @@ which mim  # to check mim installation
 
 ### For OpenMMLab v1.0
 
-**Step 2**. Install MMCV-full
+**Step 2**. Install MMCV
 
 ```sh
 mim install mmcv-full
