@@ -69,3 +69,7 @@ This repository use some dataset and model from [Zihao](https://github.com/Tommy
 [Fruit dataset](https://zihao-openmmlab.obs.myhuaweicloud.com/20220716-mmclassification/dataset/fruit30/fruit30_split.zip)
 
 [Fruit model](https://zihao-openmmlab.obs.myhuaweicloud.com/20220716-mmclassification/checkpoints/fruit30_mmcls/fruit30_mmcls.pth)
+
+and MMDetection and KITTI.
+
+[KITTI-tiny](https://download.openmmlab.com/mmdetection/data/kitti_tiny.zip)
