@@ -51,13 +51,13 @@ mim install mmcls mmdet
 **Step 2**. Install MMCV
 
 ```sh
-mim install mmcv>=2.0.0rc0
+mim install "mmcv>=2.0.0rc0"
 ```
 
 **Step 2**. Install MMClassification and MMDetection
 
 ```sh
-mim install mmcls>=1.0.0rc0 mmdet>=3.0.0rc0
+mim install "mmcls>=1.0.0rc0" "mmdet>=3.0.0rc0"
 ```
 
 ## License
