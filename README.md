@@ -1,6 +1,15 @@
 # sjtu-openmmlab-tutorial
 
+This repository maintains codes of OpenMMLab tutorial delivered in SJTU. 
+For a full list of OpenMMLab courses and tutorials, see [OpenMMLabCourse](https://github.com/open-mmlab/OpenMMLabCourse) (in Chinese). 
+
 ## Notes on SJTU Cluster
+
+### For OpenMMLab v2.0
+
+**TODO**
+
+### For OpenMMLab v1.0
 
 1. To activate conda environment in **terminal**
 
@@ -9,7 +18,7 @@
     source activate openmmlab
     ```
 
-2. Remember to select **openmmlab** kernel in jupyter notebook
+2. Remember to select **openmmlab** kernel when using jupyter notebook
 
 3. Remember to check PATH in terminal
 
@@ -18,9 +27,6 @@
 
 ## Set up Environment Locally
 
-**Check PATH**
-
-Should include
 **Step 0**. Set up Python and install PyTorch correctly, using either pip or conda
 
 **Step 1**. Install [MIM](https://github.com/open-mmlab/mim)
@@ -30,20 +36,6 @@ pip install openmim
 which mim  # to check mim installation
 # On windows, in Powershell, use
 # gcm mim
-```
-
-### For OpenMMLab v1.0
-
-**Step 2**. Install MMCV
-
-```sh
-mim install mmcv-full
-```
-
-**Step 3**. Install MMClassification and MMDetection
-
-```sh
-mim install mmcls mmdet
 ```
 
 ### For OpenMMLab v2.0
@@ -60,11 +52,25 @@ mim install "mmcv>=2.0.0rc0"
 mim install "mmcls>=1.0.0rc0" "mmdet>=3.0.0rc0"
 ```
 
+### For OpenMMLab v1.0
+
+**Step 2**. Install MMCV
+
+```sh
+mim install mmcv-full
+```
+
+**Step 3**. Install MMClassification and MMDetection
+
+```sh
+mim install mmcls mmdet
+```
+
 ## License
 
 ## Credit
 
-This repository use some dataset and model from [Zihao](https://github.com/TommyZihao/MMClassification_Tutorials).
+This repository uses some datasets and models from [Zihao](https://github.com/TommyZihao/MMClassification_Tutorials)](https://github.com/TommyZihao/MMClassification_Tutorials).
 
 [Fruit dataset](https://zihao-openmmlab.obs.myhuaweicloud.com/20220716-mmclassification/dataset/fruit30/fruit30_split.zip)
 
