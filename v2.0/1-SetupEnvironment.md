@@ -148,6 +148,7 @@ MMCV 是 OpenMMLab 的基础库，正常可以通过 `mim` 工具安装，但 `m
 注意双引号
 
 检查：`pip list | grep mm`
+
 正常输出：
 ```
 mmcls               1.0.0rc5
@@ -180,13 +181,16 @@ pip3 install -e . # 注意
 
 2. mmdeploy 1.x
 
+
     ```
     git clone https://gitee.com/open-mmlab/mmdeploy.git -b 1.x
     cd mmdeploy/third_party/
     git clone https://gitee.com/NVIDIA_Developer_Community/cub.git
     git clone https://gitee.com/lkhlll/pybind11.git
     git clone https://gitee.com/rocket-booster/spdlog.git
-    3. Base deploy environment
+    ```
+    
+    ```
     # onnxruntime
     wget https://gh.flyinbug.top/gh/https://github.com/open-mmlab/mmdeploy/releases/download/v1.0.0rc2/mmdeploy-1.0.0rc2-linux-x86_64-onnxruntime1.8.1.tar.gz
     cd mmdeploy-1.0.0rc2-linux-x86_64-onnxruntime1.8.1
@@ -199,7 +203,9 @@ pip3 install -e . # 注意
     tar -zxvf onnxruntime-linux-x64-1.8.1.tgz
     export ONNXRUNTIME_DIR=$(pwd)/onnxruntime-linux-x64-1.8.1
     export LD_LIBRARY_PATH=$ONNXRUNTIME_DIR/lib:$LD_LIBRARY_PATH
+    ```
 
+    ```
     # tensorrt
     wget https://gh.flyinbug.top/gh/https://github.com/open-mmlab/mmdeploy/releases/download/v1.0.0rc2/mmdeploy-1.0.0rc2-linux-x86_64-cuda10.2-tensorrt8.2.3.0.tar.gz
     tar -zxvf mmdeploy-1.0.0rc2-linux-x86_64-cuda10.2-tensorrt8.2.3.0.tar.gz
