@@ -4,7 +4,8 @@
 2. 激活预装环境
     ```bash
     module load anaconda3/2019.07
-    source activate openmmlab2
+    source activate openmmlab2 # OpenMMLab v2.0 版本
+    # source activate openmmlab # OpenMMLab v1.0 版本    
     ```
 
     注：方便起见可以在 `~/.bashrc` 中加载conda环境、配置快捷命令，例如在 `~/.bashrc` 中追加如下内容：
@@ -138,7 +139,7 @@ MMCV 是 OpenMMLab 的基础库，正常可以通过 `mim` 工具安装，但 `m
 
 验证：`srun -p gpu -N 1 --gres gpu:1 python -c "import mmcv.ops"`，安装正常情况下无输出，安装不成功会报错。
 
-### 2.4.2. 安装其他工具包
+### 2.4.2. 安装算法工具包
 
 1. 可以直接用 pip 安装，例如：
 
