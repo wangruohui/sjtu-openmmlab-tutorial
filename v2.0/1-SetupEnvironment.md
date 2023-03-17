@@ -18,10 +18,11 @@
     保存退出，**重新登陆**后默认加载 Anaconda ，且可以使用 `sa openmmlab2` 激活对应环境
 3. 可以使用 `mim list` 查看所有预装的 openmmlab v2.0 工具包
 
-虽然环境里面预装了一系列工具包，但我们也可以使用github上最新的代码。例如可以通过以下方式“覆盖”预装的代码：
+虽然环境里面预装了一系列工具包，但我们也可以使用github上最新的代码。例如可以通过以下方式“覆盖”预装的MMClassification（其他代码库同理、主意 clone 时使用 -b 以clone正确的版本及正确设置路径）：
 
 ```bash
-git clone https://github.com/open-mmlab/mmclassification.git
+git clone https://github.com/open-mmlab/mmclassification.git -b 1.x
+git checkout 1.x
 cd mmclassification
 # 在此目录下 import mmcls 就会使用该文件夹下的版本
 python -c "import mmcls; print(mmcls.__file__)"
@@ -35,6 +36,17 @@ cd ~
 export PYTHONPATH=~/mmclassification;~/mmdetection
 python -c "import mmcls; print(mmcls.__file__)"
 ```
+
+4. （可选）配置 srun 快捷键
+
+集群上需要使用 srun 提交任务到 gpu 节点运行，srun 参数较多但是是固定的，为了方便可以在 `~/.bashrc` 中配置快捷命令，例：
+
+```bash
+alias srun1='srun -p gpu -N 1 -n 1 -c 4 --gres gpu:1'
+alias srun2='srun -p gpu -N 1 -n 2 -c 4 --gres gpu:2'
+```
+
+这两个命令分别提交 1 个任务、使用 4/8 个CPU核心、1/2 个 GPU
 
 # 2. 自己配置环境
 
