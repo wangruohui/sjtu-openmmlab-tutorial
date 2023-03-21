@@ -1,13 +1,15 @@
 # sjtu-openmmlab-tutorial
 
 This repository maintains codes of OpenMMLab tutorial delivered in SJTU. 
+Tutorial codes of OpenMMLab version 1.0 and 2.0 are organized in `v1.0` and `v2.0` respectively. 
+
 For a full list of OpenMMLab courses and tutorials, see [OpenMMLabCourse](https://github.com/open-mmlab/OpenMMLabCourse) (in Chinese). 
 
 ## Notes on SJTU Cluster
 
 ### For OpenMMLab v2.0
 
-**TODO**
+See [this](v2.0/1-SetupEnvironment.md)
 
 ### For OpenMMLab v1.0
 
@@ -67,6 +69,8 @@ mim install mmcls mmdet
 ```
 
 ## License
+
+Apache-2.0 license
 
 ## Credit
 
