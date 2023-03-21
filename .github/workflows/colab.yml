@@ -18,4 +18,4 @@ jobs:
           verbose: true
 
       - name: Use your favorite commit&push action here
-      - uses: GuillaumeFalourd/git-commit-push@v1.3
+        uses: GuillaumeFalourd/git-commit-push@v1.3
