@@ -8,13 +8,13 @@ jobs:
     steps:
       - name: Checkout first
         id: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Add/Update badges
         id: badges
         uses: trsvchn/colab-badge-action@v4
         with:
-          target_branch: main
+          # target_branch: main
           verbose: true
 
       - name: Use your favorite commit&push action here
