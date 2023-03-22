@@ -112,7 +112,7 @@ alias srun2='srun -p gpu -N 1 -n 2 -c 4 --gres gpu:2'
 - MMDeploy 要求 1.8 到 1.12
 - 驱动版本限制 CUDA 不超过 10.2 
 
-所以，需要需要装个旧版的 PyTorch ，可参考 https://pytorch.org/get-started/previous-versions/，`torchaudio` 不用装
+所以，需要需要装个旧版的 PyTorch ，可参考 https://pytorch.org/get-started/previous-versions/ ，`torchaudio` 不用装
 
 示例命令：
 ```
